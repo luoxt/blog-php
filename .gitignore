@@ -1,1 +1,19 @@
 api/.env
+api/storage
+
+.DS_Store
+view/*/node_modules/
+view/*/dist/
+view/*/npm-debug.log*
+view/*/yarn-debug.log*
+view/*/yarn-error.log*
+view/*/test/*
+view/*/selenium-debug.log
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
