@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers\Api\Front;
 
 use Log;
 use App\Base\Plugins\Validators\Validate;
@@ -11,17 +11,10 @@ class Controller extends BaseController
     use Validate;
 
     protected $request = null;
-    protected $user_info = [];
-    protected $user_id = 0;
-    protected $org_id = 0;
 
     public function __construct($request)
     {
         $this->request = $request;
-
-        $this->user_info = app('user_info');
-        $this->user_id = $this->user_info['user_id'];
-        $this->org_id = $this->user_info['org_id'];
     }
 
     public function request($params)
